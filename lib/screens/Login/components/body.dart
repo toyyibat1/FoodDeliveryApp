@@ -3,11 +3,10 @@ import 'package:FoodDeliveryApp/components/constants.dart';
 import 'package:FoodDeliveryApp/components/rounded_button.dart';
 import 'package:FoodDeliveryApp/components/rounded_inputField.dart';
 import 'package:FoodDeliveryApp/components/rounded_password_field.dart';
-import 'package:FoodDeliveryApp/components/text_field_container.dart';
 import 'package:FoodDeliveryApp/screens/Login/components/background.dart';
+import 'package:FoodDeliveryApp/screens/Menu/menu.dart';
 import 'package:FoodDeliveryApp/screens/SignUp/signup.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 class Body extends StatelessWidget {
   const Body({
@@ -18,7 +17,8 @@ class Body extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-    return Background(child: SingleChildScrollView(
+    return Background(
+      child: SingleChildScrollView(
           child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
@@ -45,7 +45,10 @@ class Body extends StatelessWidget {
           ),
           RoundedButton(
             text: "LOGIN",
-            press: (){},
+            press: ()=> 
+            Navigator.push(
+              context, MaterialPageRoute(
+                builder: (context)=> Menu())),
           ),
           SizedBox(
             height: size.height * 0.03,

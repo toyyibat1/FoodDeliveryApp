@@ -60,9 +60,9 @@ class _MyHomePageState extends State<MyHomePage> {
                       'Ounje App',
                       style: GoogleFonts.aclonica(
                           textStyle: TextStyle(
-                              fontSize: 40,
+                              fontSize: 50,
                               fontWeight: FontWeight.w600,
-                              color: kPrimaryColor)),
+                              color: Colors.white)),
                     )
                   ],
                 )),
