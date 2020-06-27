@@ -7,8 +7,8 @@ class RoundedPasswordField extends StatelessWidget {
   final ValueChanged<String> onChanged;
   final String hintText;
   const RoundedPasswordField({
-    Key key, 
-    this.onChanged, 
+    Key key,
+    this.onChanged,
     this.hintText,
   }) : super(key: key);
 
@@ -16,20 +16,17 @@ class RoundedPasswordField extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextFieldContainer(
       child: TextField(
-      obscureText: true,
-      onChanged: onChanged,
-      decoration: InputDecoration(
-        hintText: hintText,
-        icon: Icon(
-          Icons.lock, 
-          color: kPrimaryColor,
-          ),
-          suffixIcon: Icon(
-            Icons.visibility,
-            color: kPrimaryColor),
-            border: InputBorder.none
-      )
-    ),);
+        obscureText: true,
+        onChanged: onChanged,
+        decoration: InputDecoration(
+            hintText: hintText,
+            icon: Icon(
+              Icons.lock,
+              color: kPrimaryColor,
+            ),
+            suffixIcon: Icon(Icons.visibility, color: kPrimaryColor),
+            border: InputBorder.none),
+      ),
+    );
   }
 }
-

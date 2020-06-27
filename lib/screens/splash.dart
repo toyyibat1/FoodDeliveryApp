@@ -45,27 +45,26 @@ class _MyHomePageState extends State<MyHomePage> {
           children: [
             Expanded(
                 child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Container(
-                      decoration: new BoxDecoration(
-                        image: new DecorationImage(
-                          image: new AssetImage("assets/images/logo.png"),
-                          fit: BoxFit.fill,
-                        ),
-                      ),
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                  decoration: new BoxDecoration(
+                    image: new DecorationImage(
+                      image: new AssetImage("assets/images/logo.png"),
+                      fit: BoxFit.fill,
                     ),
-                       
-                    Text(
-                      'Ounje App',
-                      style: GoogleFonts.aclonica(
-                          textStyle: TextStyle(
-                              fontSize: 50,
-                              fontWeight: FontWeight.w600,
-                              color: Colors.white)),
-                    )
-                  ],
-                )),
+                  ),
+                ),
+                Text(
+                  'Ounje App',
+                  style: GoogleFonts.aclonica(
+                      textStyle: TextStyle(
+                          fontSize: 50,
+                          fontWeight: FontWeight.w600,
+                          color: Colors.white)),
+                )
+              ],
+            )),
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 10),
               child: Center(

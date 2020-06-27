@@ -1,16 +1,16 @@
 import 'package:FoodDeliveryApp/components/text_field_container.dart';
 import 'package:flutter/material.dart';
-
 import 'constants.dart';
 
 class RoundedInputField extends StatelessWidget {
   final String hintText;
   final IconData icon;
   final ValueChanged<String> onChanged;
+
   const RoundedInputField({
-    Key key, 
-    this.hintText, 
-    this.icon = Icons.person, 
+    Key key,
+    this.hintText,
+    this.icon = Icons.person,
     this.onChanged,
   }) : super(key: key);
 
@@ -18,12 +18,17 @@ class RoundedInputField extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextFieldContainer(
       child: TextField(
-           obscureText: true,
+        obscureText: true,
         onChanged: onChanged,
-      decoration: InputDecoration(
-        icon: Icon(icon, color: kPrimaryColor,),
-        hintText: hintText,
-        border: InputBorder.none),
-    ),);
+        decoration: InputDecoration(
+          icon: Icon(
+            icon,
+            color: kPrimaryColor,
+          ),
+          hintText: hintText,
+          border: InputBorder.none
+        ),
+      ),
+    );
   }
 }
